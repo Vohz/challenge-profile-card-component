@@ -1,26 +1,64 @@
-
+/* all card style */
 .card {
-  background-color: red;
-  width: 700px;
-  height: 500px;
+  background-color: white;
+  background-image: url("../../assets/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-.top-card {
-  background-image: url("../../assets/bg-pattern-card.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
+/* top card style */
+.top-card {
+  border-radius: 100%;
+  border: 5px solid white;
+  width: 100px;
+  margin-top: 70px;
+}
+/* middle card style */
 .middle-card{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
+.middle-card > div {
+  display: flex;
+  flex-direction: row;
+}
+.name {
+  font-weight: bold;
+}
+.city {
+  color: hsl(227, 10%, 46%);
+  padding-left: 30px;
+}
+.old {
+  color: hsl(227, 10%, 46%);
+  padding-left: 10px;
+  font-weight: bold;
+}
+/* bot card style */
 .bot-card{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  border-top: 1px solid gray;
+  width: 350px;
+}
+ul{
+  padding-left: 5px;
+}
+li{
+  list-style-type: none;
+}
+li:first-child{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+li:last-child{
+  color: hsl(227, 10%, 46%);
 }
