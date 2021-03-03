@@ -2,11 +2,12 @@
 body {
   font-family: Kumbh Sans;
   font-size: 18px;
-  background-image: url("assets/bg-pattern-top.svg");
+  background-image: url("assets/bg-pattern-top.svg"), url("assets/bg-pattern-bottom.svg");
+  background-position: -125px -300px, 950px 400px;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: hsl(185, 75%, 39%);
 }
